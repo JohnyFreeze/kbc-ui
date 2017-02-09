@@ -59,7 +59,7 @@ module.exports = React.createClass
           @_renderComponents()
       div className: 'row',
         div className: 'text-center',
-          h2 null, 'Haven\'t found what you were looking for?'
+          h2 null, 'Haven\'t found what you are looking for?'
           a
             className: 'btn btn-primary'
             href: 'mailto:support@keboola.com'
