@@ -238,8 +238,8 @@ module.exports = (componentId) ->
         ul className: 'nav nav-stacked',
           li {className: classnames(disabled: !@_canRunUpload())},
             RunButtonModal
-              title: 'Upload tables'
-              icon: 'fa fa-fw fa-upload'
+              title: 'Run'
+              icon: 'fa fa-fw fa-play'
               mode: 'link'
               component: componentId
               disabled: !@_canRunUpload()

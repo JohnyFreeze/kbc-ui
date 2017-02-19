@@ -167,10 +167,10 @@ module.exports = React.createClass
           RunButtonModal
             disabled: !!@_disabledToRun()
             disabledReason: @_disabledToRun()
-            title: "Upload tables"
+            title: "Run"
             tooltip: "Upload all selected tables"
             mode: 'link'
-            icon: 'fa fa-upload fa-fw'
+            icon: 'fa fa-play fa-fw'
             component: componentId
             runParams: =>
               config: @state.configId
