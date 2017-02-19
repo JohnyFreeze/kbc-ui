@@ -3,6 +3,7 @@ import ApplicationStore from '../../../stores/ApplicationStore';
 import Graph from './Graph';
 import UsageByMonth from './UsageByMonth';
 import ProjectPowerLimit from './ProjectPowerLimit';
+import { Link } from 'react-router';
 
 export function componentIoSummary(data, metric) {
   return data
@@ -26,10 +27,10 @@ export default React.createClass({
             <a href={this.projectPageUrl('settings')}>Settings</a>
           </li>
           <li role="presentation">
-            <a href={this.projectPageUrl('settings-limits')}>Limits</a>
+            <Link to="settings-limits">Limits</Link>
           </li>
           <li role="presentation" className="active">
-            <a href={this.projectPageUrl('settings-project-power')}>Project Power</a>
+            <Link to="settings-project-power">Project Power</Link>
           </li>
         </ul>
         <div className="kbc-header">

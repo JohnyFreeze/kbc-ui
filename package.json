@@ -26,6 +26,7 @@
     "diff": "^2.2.3",
     "dimple": "git+https://github.com/PMSI-AlignAlytics/dimple.git",
     "eslint": "^1.8.0",
+    "eslint-config-airbnb": "^14.1.0",
     "eslint-loader": "~1.1.1",
     "eslint-plugin-react": "^3.11.3",
     "extract-text-webpack-plugin": "^0.9.1",
@@ -68,14 +69,14 @@
     "react-sticky": "~2.5.2",
     "react-textarea-autosize": "^2.3.1",
     "remarkable": "^1.6.2",
+    "remove-markdown": "^0.1.0",
     "style-loader": "~0.13.0",
     "superagent": "~0.21.0",
     "underscore": "~1.7.0",
     "underscore.string": "~3.0.3",
     "url-loader": "~0.5.5",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1",
-    "remove-markdown": "^0.1.0"
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack/dev-server.config.js --hot --progress --colors --host 0.0.0.0 --port 3000 --inline",
@@ -91,6 +92,7 @@
   "devDependencies": {
     "cross-env": "^1.0.7",
     "eslint-loader": "^1.1.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
     "exports-loader": "^0.6.3",
     "mocha": "^2.4.5"
   }

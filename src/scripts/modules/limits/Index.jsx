@@ -4,6 +4,7 @@ import createStoreMixin from '../../react/mixins/createStoreMixin';
 import LimitsSection from './LimitsSection';
 import StorageApi from '../components/StorageApi';
 import Keen from 'keen-js';
+import { Link } from 'react-router';
 
 export default React.createClass({
   mixins: [createStoreMixin(ApplicationStore)],
@@ -48,10 +49,10 @@ export default React.createClass({
             <a href={this.projectPageUrl('settings')}>Settings</a>
           </li>
           <li role="presentation" className="active">
-            <a href={this.projectPageUrl('settings-limits')}>Limits</a>
+            <Link to="settings-limits">Limits</Link>
           </li>
           <li role="presentation">
-            <a href={this.projectPageUrl('settings-project-power')}>Project Power</a>
+            <Link to="settings-project-power">Project Power</Link>
           </li>
         </ul>
         {this.state.sections.map((section) => {
